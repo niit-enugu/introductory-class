@@ -4,21 +4,81 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home | Webpage</title>
+        <style>
+            /*this is a comment*/
+            /* css syntax  */
+            /**
+            * selector {
+                property: value;
+            }
+            */
+
+            /* <> angle brackect
+            [] bracket (square brackeet)
+            () parenthesis
+            {} curly braces */
+
+            p {
+                color: blue;
+            }
+
+            /* in css we have various selection methods, we have 
+            selection by tagname e.g p, header
+            selection by classname e.g .book .name
+            selection by id e.g #book #tewst
+            selection by attribute
+            */
+            .main-p { /*selection by classname*/
+                color: yellow;
+            }
+            p {/*selection by tagname*/
+                color: brown;
+            }
+
+            #test {/*selection by id*/
+                color: green;
+            }
+
+            input[type='password'] { /*selection by attribute*/
+                border-color: red;
+            }
+
+            h3{
+                color: green!important;
+            }
+            .h-logo{
+                color: purple;
+                font-weight: 300;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h3>Logo</h3>
+            <h3 style="color: red" id="logo">Chinny's <span class="h-logo">Bread</span></h3>
+            <style>
+                
+            </style>
             <nav>
-                <a href="#"><p>Home</p></a> 
-                <a href="team.html"><p>Team</p></a> 
-                <a href="product.html"><p>Product</p></a>  
+                <a href="#"><p>Home</p></a>
+                <a href="team.html"><p>Team</p></a>
+                <a href="product.html"><p>Product</p></a>
             </nav>
-            <p><a href="sub/sub.html">sub page</a> and <a href="../index.html">index page</a></p>
+            <p>
+                <a href="sub/sub.html">sub page</a> and
+                <a href="../index.html">index page</a>
+            </p>
         </header>
         <main>
             <h2>Home Page</h2>
-            <p>Welcome</p>
-            <p>Welcome to the home page</p>
+            <p class="main-p" id="test">Welcome</p>
+            <p class="main-p">Welcome to the home page</p>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <br />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+            </form>
         </main>
         <foorter></foorter>
     </body>

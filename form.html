@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <!-- the form element have 2 attribute the action and the method, action is where we specify the link the form submits to while the method attr is used to specify the method  -->
+        <form action="" method="get">
+            <label for="firstname">Firstname</label>
+            <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="e.g John"
+                required
+                autofocus
+            />
+            <br />
+            <!-- the label and input are used to collect data from the browser, the for attr is used to link the label to the input and help with accessibiblity  -->
+            <label for="lastname">Lastname</label>
+            <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="e.g Doe"
+            />
+            <br />
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="someone@example.com"
+            />
+            <br />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" />
+            <br />
+            <label for="doa">Date of Appointment</label>
+            <input
+                type="date"
+                id="doa"
+                min="2010-01-01"
+                max="2015-12-31"
+                name="doa"
+            />
+            <br />
+            <label for="age">Age</label>
+            <input type="number" id="age" min="18" max="100" name="age" />
+
+            <br />
+            <label for="color">Favourite Colour</label>
+            <input type="color" id="color" name="color" />
+
+            <br />
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume" />
+
+            <br />
+            <!-- dropdown element in html form  -->
+            <label for="country">Select Your Country</label>
+            <select id="country" name="country">
+                <option value="" disabled selected>
+                    ---Select a country---
+                </option>
+                <optgroup label="Africa">
+                    <option value="nigeria">Nigeria</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="egypt">Egypt</option>
+                </optgroup>
+                <optgroup label="America">
+                    <option value="usa">United States</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="canada">Canada</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="england">England</option>
+                    <option value="france">France</option>
+                    <option value="germany">Germany</option>
+                </optgroup>
+            </select>
+            <!-- making a checkbox in HTML form  -->
+            <br />
+            <label for="language">Choose you language(s)</label>
+            <br />
+            <input type="checkbox" name="language" value="php" id="php" />
+            <label for="php">PHP</label>
+            <input type="checkbox" name="language" value="python" id="python" />
+            <label for="python">Python</label>
+            <input type="checkbox" name="language" value="rubby" id="ruby" />
+            <label for="ruby">Ruby</label>
+            <input type="checkbox" name="language" value="js" id="js" />
+            <label for="js">JavaScript</label>
+            <br />
+
+            <!-- making a radio button in HTML form -->
+            <label for="gender">Gender</label>
+            <br />
+            <input type="radio" name="gender" value="male" id="male" checked />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="others" id="others" />
+            <label for="others">Others</label>
+            <br />
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <br/>  
+            <button>Submit</button>
+            <input type="reset" value="Submit" />
+        </form>
+    </body>
+</html>
